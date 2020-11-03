@@ -39,6 +39,12 @@
     return NO;
 }
 
+//- (void)viewSafeAreaInsetsDidChange
+//{
+//    [super viewSafeAreaInsetsDidChange];
+//    NSLog(@"safeAreaInsets:%@",self.view.safeAreaInsets);
+//}
+
 #pragma mark - views layout init
 - (void)viewsLayoutInit
 {
@@ -49,7 +55,7 @@
         make.center.equalTo(self.view);
     }];
     [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.topMargin.equalTo(self.view.mas_topMargin);
+        make.top.equalTo(self.view.mas_topMargin);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
 }
@@ -69,7 +75,7 @@
     {
         _imageView = [[UIImageView alloc] init];
         _imageView.contentMode = UIViewContentModeScaleAspectFit;
-        _imageView.image = [UIImage imageNamed:self.title];
+        _imageView.image = [UIImage imageNamed:self.tabBarItem.title];
     }
     return _imageView;
 }
