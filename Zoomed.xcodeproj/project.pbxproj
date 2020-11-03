@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0101B9CF5CE119B7D78BEB11 /* libPods-ZoomedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F50A46312ACB25ED2240611 /* libPods-ZoomedTests.a */; };
+		2FC4A935BF4E12BC2DB049D1 /* libPods-Zoomed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 498837ACE94192ED417423BC /* libPods-Zoomed.a */; };
+		6E50AEDDAC6231DAF3AC0A65 /* libPods-ZoomedUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6E698D48C2D77C4E4C6452 /* libPods-ZoomedUITests.a */; };
 		A0CD4E1B2550F70D00FE2458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E1A2550F70D00FE2458 /* AppDelegate.m */; };
 		A0CD4E212550F70D00FE2458 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E202550F70D00FE2458 /* ViewController.m */; };
 		A0CD4E262550F70F00FE2458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CD4E252550F70F00FE2458 /* Assets.xcassets */; };
@@ -34,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F50A46312ACB25ED2240611 /* libPods-ZoomedTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZoomedTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1495BCD52F45BAC3C4556C /* Pods-ZoomedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomedUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZoomedUITests/Pods-ZoomedUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3E4D68424E2FF5461BEE3DA1 /* Pods-Zoomed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoomed.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zoomed/Pods-Zoomed.release.xcconfig"; sourceTree = "<group>"; };
+		498837ACE94192ED417423BC /* libPods-Zoomed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zoomed.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B054421529CFC70FA7E04C3 /* Pods-ZoomedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomedTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZoomedTests/Pods-ZoomedTests.debug.xcconfig"; sourceTree = "<group>"; };
+		88DF435F4868CAE2D4E70F4F /* Pods-ZoomedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomedUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZoomedUITests/Pods-ZoomedUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E299038B4CD144128F6154B /* Pods-Zoomed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoomed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zoomed/Pods-Zoomed.debug.xcconfig"; sourceTree = "<group>"; };
+		9E6E698D48C2D77C4E4C6452 /* libPods-ZoomedUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZoomedUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CD4E162550F70D00FE2458 /* Zoomed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoomed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CD4E192550F70D00FE2458 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0CD4E1A2550F70D00FE2458 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		A0CD4E3C2550F70F00FE2458 /* ZoomedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoomedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CD4E402550F70F00FE2458 /* ZoomedUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoomedUITests.m; sourceTree = "<group>"; };
 		A0CD4E422550F70F00FE2458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE0CF3E4B4E5C16DF6F28785 /* Pods-ZoomedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZoomedTests/Pods-ZoomedTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FC4A935BF4E12BC2DB049D1 /* libPods-Zoomed.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0101B9CF5CE119B7D78BEB11 /* libPods-ZoomedTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E50AEDDAC6231DAF3AC0A65 /* libPods-ZoomedUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				A0CD4E342550F70F00FE2458 /* ZoomedTests */,
 				A0CD4E3F2550F70F00FE2458 /* ZoomedUITests */,
 				A0CD4E172550F70D00FE2458 /* Products */,
+				F81675E81EEAE26E7B89198A /* Pods */,
+				F9B137FCCEB195F77E06CACD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +146,29 @@
 			path = ZoomedUITests;
 			sourceTree = "<group>";
 		};
+		F81675E81EEAE26E7B89198A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E299038B4CD144128F6154B /* Pods-Zoomed.debug.xcconfig */,
+				3E4D68424E2FF5461BEE3DA1 /* Pods-Zoomed.release.xcconfig */,
+				4B054421529CFC70FA7E04C3 /* Pods-ZoomedTests.debug.xcconfig */,
+				DE0CF3E4B4E5C16DF6F28785 /* Pods-ZoomedTests.release.xcconfig */,
+				88DF435F4868CAE2D4E70F4F /* Pods-ZoomedUITests.debug.xcconfig */,
+				3B1495BCD52F45BAC3C4556C /* Pods-ZoomedUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9B137FCCEB195F77E06CACD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				498837ACE94192ED417423BC /* libPods-Zoomed.a */,
+				2F50A46312ACB25ED2240611 /* libPods-ZoomedTests.a */,
+				9E6E698D48C2D77C4E4C6452 /* libPods-ZoomedUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0CD4E452550F70F00FE2458 /* Build configuration list for PBXNativeTarget "Zoomed" */;
 			buildPhases = (
+				B3A5A4F77A22CEE3DEF89E54 /* [CP] Check Pods Manifest.lock */,
 				A0CD4E122550F70D00FE2458 /* Sources */,
 				A0CD4E132550F70D00FE2458 /* Frameworks */,
 				A0CD4E142550F70D00FE2458 /* Resources */,
+				B54009B2BE77A2644C5A9C3D /* [CP] Embed Pods Frameworks */,
+				67770BDE2B0161FB81E022D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0CD4E482550F70F00FE2458 /* Build configuration list for PBXNativeTarget "ZoomedTests" */;
 			buildPhases = (
+				D0858EF56FB7AB0F75E8CDE3 /* [CP] Check Pods Manifest.lock */,
 				A0CD4E2D2550F70F00FE2458 /* Sources */,
 				A0CD4E2E2550F70F00FE2458 /* Frameworks */,
 				A0CD4E2F2550F70F00FE2458 /* Resources */,
+				6729B2023E53B8447523AB55 /* [CP] Embed Pods Frameworks */,
+				D0F3712DA6D764DBA23239C8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0CD4E4B2550F70F00FE2458 /* Build configuration list for PBXNativeTarget "ZoomedUITests" */;
 			buildPhases = (
+				A540C2BAE7082B599D6037DE /* [CP] Check Pods Manifest.lock */,
 				A0CD4E382550F70F00FE2458 /* Sources */,
 				A0CD4E392550F70F00FE2458 /* Frameworks */,
 				A0CD4E3A2550F70F00FE2458 /* Resources */,
+				5DB126868BC22D717BA7DB8C /* [CP] Embed Pods Frameworks */,
+				90DF8BA11A5D7FE7F92BA045 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +300,180 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DB126868BC22D717BA7DB8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZoomedUITests/Pods-ZoomedUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6729B2023E53B8447523AB55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZoomedTests/Pods-ZoomedTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67770BDE2B0161FB81E022D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zoomed/Pods-Zoomed-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90DF8BA11A5D7FE7F92BA045 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZoomedUITests/Pods-ZoomedUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A540C2BAE7082B599D6037DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3A5A4F77A22CEE3DEF89E54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B54009B2BE77A2644C5A9C3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zoomed/Pods-Zoomed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0858EF56FB7AB0F75E8CDE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D0F3712DA6D764DBA23239C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZoomedTests/Pods-ZoomedTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0CD4E122550F70D00FE2458 /* Sources */ = {
@@ -420,6 +643,7 @@
 		};
 		A0CD4E462550F70F00FE2458 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E299038B4CD144128F6154B /* Pods-Zoomed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,6 +663,7 @@
 		};
 		A0CD4E472550F70F00FE2458 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E4D68424E2FF5461BEE3DA1 /* Pods-Zoomed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +683,7 @@
 		};
 		A0CD4E492550F70F00FE2458 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B054421529CFC70FA7E04C3 /* Pods-ZoomedTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +704,7 @@
 		};
 		A0CD4E4A2550F70F00FE2458 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE0CF3E4B4E5C16DF6F28785 /* Pods-ZoomedTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -498,6 +725,7 @@
 		};
 		A0CD4E4C2550F70F00FE2458 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88DF435F4868CAE2D4E70F4F /* Pods-ZoomedUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SGP5WX546J;
@@ -516,6 +744,7 @@
 		};
 		A0CD4E4D2550F70F00FE2458 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B1495BCD52F45BAC3C4556C /* Pods-ZoomedUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SGP5WX546J;
