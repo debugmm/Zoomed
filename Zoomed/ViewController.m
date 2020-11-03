@@ -46,14 +46,10 @@
     [self.view addSubview:self.button];
 
     [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.view).offset(10);
-        make.trailing.equalTo(self.view).offset(-10);
-        make.bottomMargin.equalTo(self.view.mas_bottomMargin).offset(-10);
-//        make.height
+        make.center.equalTo(self.view);
     }];
     [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.topMargin.equalTo(self.view.mas_topMargin).offset(10);
-        make.topMargin.equalTo(self.view.mas_safeAreaLayoutGuideTop).offset(10);
+        make.topMargin.equalTo(self.view.mas_topMargin);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
 }
@@ -61,7 +57,9 @@
 #pragma mark - buttons actions
 - (void)buttonAction:(UIButton *)sender
 {
-    [self.imageView setImageWithURL:[NSURL URLWithString:@"https://wx3.sinaimg.cn/large/49535fefly1fj72buwho5j21hc0u00xy.jpg"]];
+//    [self.imageView setImageWithURL:[NSURL URLWithString:@"https://wx3.sinaimg.cn/large/49535fefly1fj72buwho5j21hc0u00xy.jpg"]];
+    NSLog(@"imageview:%@",self.imageView);
+    NSLog(@"image:%@",self.imageView.image);
 }
 
 #pragma mark -
@@ -71,6 +69,7 @@
     {
         _imageView = [[UIImageView alloc] init];
         _imageView.contentMode = UIViewContentModeScaleAspectFit;
+        _imageView.image = [UIImage imageNamed:self.title];
     }
     return _imageView;
 }

@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "TabBarController.h"
 #import "ScreenBoundsPrint.h"
 
 @interface AppDelegate ()
@@ -23,7 +23,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window.rootViewController = [[ViewController alloc] init];
+    self.window.rootViewController = [[TabBarController alloc] init];
     [self.window makeKeyAndVisible];
     [ScreenBoundsPrint screenBoundsPrint:@"application:didFinishLaunchingWithOptions"];
     return YES;

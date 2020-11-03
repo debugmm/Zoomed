@@ -17,6 +17,7 @@
 		A0CD4E362550F70F00FE2458 /* ZoomedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E352550F70F00FE2458 /* ZoomedTests.m */; };
 		A0CD4E412550F70F00FE2458 /* ZoomedUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E402550F70F00FE2458 /* ZoomedUITests.m */; };
 		A0E91DBF2551073600F7511B /* ScreenBoundsPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E91DBE2551073600F7511B /* ScreenBoundsPrint.m */; };
+		A0E91DC92551134C00F7511B /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E91DC82551134B00F7511B /* TabBarController.m */; };
 		CC328892D87B9FC3EF7D279F /* Pods_Zoomed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09AA9307413D75F99682271 /* Pods_Zoomed.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,8 @@
 		A0CD4E422550F70F00FE2458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E91DBD2551073600F7511B /* ScreenBoundsPrint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenBoundsPrint.h; sourceTree = "<group>"; };
 		A0E91DBE2551073600F7511B /* ScreenBoundsPrint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenBoundsPrint.m; sourceTree = "<group>"; };
+		A0E91DC72551134B00F7511B /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		A0E91DC82551134B00F7511B /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		DE0CF3E4B4E5C16DF6F28785 /* Pods-ZoomedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZoomedTests/Pods-ZoomedTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,10 +124,12 @@
 			children = (
 				A0CD4E192550F70D00FE2458 /* AppDelegate.h */,
 				A0CD4E1A2550F70D00FE2458 /* AppDelegate.m */,
-				A0E91DBD2551073600F7511B /* ScreenBoundsPrint.h */,
-				A0E91DBE2551073600F7511B /* ScreenBoundsPrint.m */,
+				A0E91DC72551134B00F7511B /* TabBarController.h */,
+				A0E91DC82551134B00F7511B /* TabBarController.m */,
 				A0CD4E1F2550F70D00FE2458 /* ViewController.h */,
 				A0CD4E202550F70D00FE2458 /* ViewController.m */,
+				A0E91DBD2551073600F7511B /* ScreenBoundsPrint.h */,
+				A0E91DBE2551073600F7511B /* ScreenBoundsPrint.m */,
 				A0CD4E252550F70F00FE2458 /* Assets.xcassets */,
 				A0CD4E272550F70F00FE2458 /* LaunchScreen.storyboard */,
 				A0CD4E2A2550F70F00FE2458 /* Info.plist */,
@@ -487,6 +492,7 @@
 			files = (
 				A0CD4E212550F70D00FE2458 /* ViewController.m in Sources */,
 				A0CD4E1B2550F70D00FE2458 /* AppDelegate.m in Sources */,
+				A0E91DC92551134C00F7511B /* TabBarController.m in Sources */,
 				A0E91DBF2551073600F7511B /* ScreenBoundsPrint.m in Sources */,
 				A0CD4E2C2550F70F00FE2458 /* main.m in Sources */,
 			);
