@@ -26,6 +26,17 @@
     [self viewsLayoutInit];
 }
 
+#pragma mark -
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleDefault;
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return NO;
+}
+
 #pragma mark - views layout init
 - (void)viewsLayoutInit
 {
@@ -33,12 +44,14 @@
     [self.view addSubview:self.button];
 
     [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.trailing.equalTo(self.view).offset(10);
-        make.bottomMargin.equalTo(self.view);
+        make.leading.equalTo(self.view).offset(10);
+        make.trailing.equalTo(self.view).offset(-10);
+        make.bottomMargin.equalTo(self.view.mas_bottomMargin).offset(-10);
 //        make.height
     }];
     [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.topMargin.equalTo(self.view);
+//        make.topMargin.equalTo(self.view.mas_topMargin).offset(10);
+        make.topMargin.equalTo(self.view.mas_safeAreaLayoutGuideTop).offset(10);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
 }
@@ -68,6 +81,7 @@
         [_button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
         [_button setTitle:@"加载图片" forState:UIControlStateNormal];
         [_button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_button setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
     }
     return _button;
 }
