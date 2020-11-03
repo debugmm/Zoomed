@@ -9,6 +9,7 @@
 #import "Masonry.h"
 #import "AFNetworking.h"
 #import "UIImageView+AFNetworking.h"
+#import "ScreenBoundsPrint.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     [self viewsLayoutInit];
+    [ScreenBoundsPrint screenBoundsPrint:@"viewDidLoad"];
 }
 
 #pragma mark -

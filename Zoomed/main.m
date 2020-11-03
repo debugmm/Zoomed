@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "ScreenBoundsPrint.h"
 
 int main(int argc, char * argv[]) {
     NSString * appDelegateClassName;
@@ -14,5 +15,6 @@ int main(int argc, char * argv[]) {
         // Setup code that might create autoreleased objects goes here.
         appDelegateClassName = NSStringFromClass([AppDelegate class]);
     }
+    [ScreenBoundsPrint screenBoundsPrint:@"main"];
     return UIApplicationMain(argc, argv, nil, appDelegateClassName);
 }

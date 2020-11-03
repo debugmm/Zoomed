@@ -16,6 +16,7 @@
 		A0CD4E2C2550F70F00FE2458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E2B2550F70F00FE2458 /* main.m */; };
 		A0CD4E362550F70F00FE2458 /* ZoomedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E352550F70F00FE2458 /* ZoomedTests.m */; };
 		A0CD4E412550F70F00FE2458 /* ZoomedUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E402550F70F00FE2458 /* ZoomedUITests.m */; };
+		A0E91DBF2551073600F7511B /* ScreenBoundsPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E91DBE2551073600F7511B /* ScreenBoundsPrint.m */; };
 		CC328892D87B9FC3EF7D279F /* Pods_Zoomed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09AA9307413D75F99682271 /* Pods_Zoomed.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		A0CD4E3C2550F70F00FE2458 /* ZoomedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoomedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CD4E402550F70F00FE2458 /* ZoomedUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoomedUITests.m; sourceTree = "<group>"; };
 		A0CD4E422550F70F00FE2458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0E91DBD2551073600F7511B /* ScreenBoundsPrint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenBoundsPrint.h; sourceTree = "<group>"; };
+		A0E91DBE2551073600F7511B /* ScreenBoundsPrint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenBoundsPrint.m; sourceTree = "<group>"; };
 		DE0CF3E4B4E5C16DF6F28785 /* Pods-ZoomedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZoomedTests/Pods-ZoomedTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +121,8 @@
 			children = (
 				A0CD4E192550F70D00FE2458 /* AppDelegate.h */,
 				A0CD4E1A2550F70D00FE2458 /* AppDelegate.m */,
+				A0E91DBD2551073600F7511B /* ScreenBoundsPrint.h */,
+				A0E91DBE2551073600F7511B /* ScreenBoundsPrint.m */,
 				A0CD4E1F2550F70D00FE2458 /* ViewController.h */,
 				A0CD4E202550F70D00FE2458 /* ViewController.m */,
 				A0CD4E252550F70F00FE2458 /* Assets.xcassets */,
@@ -482,6 +487,7 @@
 			files = (
 				A0CD4E212550F70D00FE2458 /* ViewController.m in Sources */,
 				A0CD4E1B2550F70D00FE2458 /* AppDelegate.m in Sources */,
+				A0E91DBF2551073600F7511B /* ScreenBoundsPrint.m in Sources */,
 				A0CD4E2C2550F70F00FE2458 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
