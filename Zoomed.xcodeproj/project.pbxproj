@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0101B9CF5CE119B7D78BEB11 /* libPods-ZoomedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F50A46312ACB25ED2240611 /* libPods-ZoomedTests.a */; };
-		2FC4A935BF4E12BC2DB049D1 /* libPods-Zoomed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 498837ACE94192ED417423BC /* libPods-Zoomed.a */; };
-		6E50AEDDAC6231DAF3AC0A65 /* libPods-ZoomedUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6E698D48C2D77C4E4C6452 /* libPods-ZoomedUITests.a */; };
+		161F520ED6AB70534B3E1D4A /* Pods_ZoomedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24279FC885635C254875D012 /* Pods_ZoomedUITests.framework */; };
+		9468DFF4A9FA5E44254091AA /* Pods_ZoomedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729CD4D516CD938A529314F4 /* Pods_ZoomedTests.framework */; };
 		A0CD4E1B2550F70D00FE2458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E1A2550F70D00FE2458 /* AppDelegate.m */; };
 		A0CD4E212550F70D00FE2458 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E202550F70D00FE2458 /* ViewController.m */; };
 		A0CD4E262550F70F00FE2458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CD4E252550F70F00FE2458 /* Assets.xcassets */; };
@@ -17,6 +16,7 @@
 		A0CD4E2C2550F70F00FE2458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E2B2550F70F00FE2458 /* main.m */; };
 		A0CD4E362550F70F00FE2458 /* ZoomedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E352550F70F00FE2458 /* ZoomedTests.m */; };
 		A0CD4E412550F70F00FE2458 /* ZoomedUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E402550F70F00FE2458 /* ZoomedUITests.m */; };
+		CC328892D87B9FC3EF7D279F /* Pods_Zoomed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09AA9307413D75F99682271 /* Pods_Zoomed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,14 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F50A46312ACB25ED2240611 /* libPods-ZoomedTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZoomedTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24279FC885635C254875D012 /* Pods_ZoomedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1495BCD52F45BAC3C4556C /* Pods-ZoomedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomedUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZoomedUITests/Pods-ZoomedUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3E4D68424E2FF5461BEE3DA1 /* Pods-Zoomed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoomed.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zoomed/Pods-Zoomed.release.xcconfig"; sourceTree = "<group>"; };
-		498837ACE94192ED417423BC /* libPods-Zoomed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zoomed.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B054421529CFC70FA7E04C3 /* Pods-ZoomedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomedTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZoomedTests/Pods-ZoomedTests.debug.xcconfig"; sourceTree = "<group>"; };
+		729CD4D516CD938A529314F4 /* Pods_ZoomedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DF435F4868CAE2D4E70F4F /* Pods-ZoomedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomedUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZoomedUITests/Pods-ZoomedUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E299038B4CD144128F6154B /* Pods-Zoomed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoomed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zoomed/Pods-Zoomed.debug.xcconfig"; sourceTree = "<group>"; };
-		9E6E698D48C2D77C4E4C6452 /* libPods-ZoomedUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZoomedUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A09AA9307413D75F99682271 /* Pods_Zoomed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoomed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CD4E162550F70D00FE2458 /* Zoomed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoomed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CD4E192550F70D00FE2458 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0CD4E1A2550F70D00FE2458 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FC4A935BF4E12BC2DB049D1 /* libPods-Zoomed.a in Frameworks */,
+				CC328892D87B9FC3EF7D279F /* Pods_Zoomed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0101B9CF5CE119B7D78BEB11 /* libPods-ZoomedTests.a in Frameworks */,
+				9468DFF4A9FA5E44254091AA /* Pods_ZoomedTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E50AEDDAC6231DAF3AC0A65 /* libPods-ZoomedUITests.a in Frameworks */,
+				161F520ED6AB70534B3E1D4A /* Pods_ZoomedUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,9 +162,9 @@
 		F9B137FCCEB195F77E06CACD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				498837ACE94192ED417423BC /* libPods-Zoomed.a */,
-				2F50A46312ACB25ED2240611 /* libPods-ZoomedTests.a */,
-				9E6E698D48C2D77C4E4C6452 /* libPods-ZoomedUITests.a */,
+				A09AA9307413D75F99682271 /* Pods_Zoomed.framework */,
+				729CD4D516CD938A529314F4 /* Pods_ZoomedTests.framework */,
+				24279FC885635C254875D012 /* Pods_ZoomedUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

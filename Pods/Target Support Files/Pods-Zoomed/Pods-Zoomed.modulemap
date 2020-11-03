@@ -1,0 +1,6 @@
+framework module Pods_Zoomed {
+  umbrella header "Pods-Zoomed-umbrella.h"
+
+  export *
+  module * { export * }
+}
