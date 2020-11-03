@@ -18,6 +18,9 @@
 		A0CD4E412550F70F00FE2458 /* ZoomedUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E402550F70F00FE2458 /* ZoomedUITests.m */; };
 		A0E91DBF2551073600F7511B /* ScreenBoundsPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E91DBE2551073600F7511B /* ScreenBoundsPrint.m */; };
 		A0E91DC92551134C00F7511B /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E91DC82551134B00F7511B /* TabBarController.m */; };
+		A0E91DCF2551300600F7511B /* UIImageView+ContentScaleFactor.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E91DCE2551300500F7511B /* UIImageView+ContentScaleFactor.m */; };
+		A0E91DD52551615900F7511B /* UIScreen+NativeScale.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E91DD42551615900F7511B /* UIScreen+NativeScale.m */; };
+		A0E91DE4255166CC00F7511B /* PrivateScreenMode.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E91DE3255166CC00F7511B /* PrivateScreenMode.m */; };
 		CC328892D87B9FC3EF7D279F /* Pods_Zoomed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09AA9307413D75F99682271 /* Pods_Zoomed.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,12 @@
 		A0E91DBE2551073600F7511B /* ScreenBoundsPrint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenBoundsPrint.m; sourceTree = "<group>"; };
 		A0E91DC72551134B00F7511B /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		A0E91DC82551134B00F7511B /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		A0E91DCD2551300500F7511B /* UIImageView+ContentScaleFactor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ContentScaleFactor.h"; sourceTree = "<group>"; };
+		A0E91DCE2551300500F7511B /* UIImageView+ContentScaleFactor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ContentScaleFactor.m"; sourceTree = "<group>"; };
+		A0E91DD32551615900F7511B /* UIScreen+NativeScale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScreen+NativeScale.h"; sourceTree = "<group>"; };
+		A0E91DD42551615900F7511B /* UIScreen+NativeScale.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+NativeScale.m"; sourceTree = "<group>"; };
+		A0E91DE2255166CC00F7511B /* PrivateScreenMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateScreenMode.h; sourceTree = "<group>"; };
+		A0E91DE3255166CC00F7511B /* PrivateScreenMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateScreenMode.m; sourceTree = "<group>"; };
 		DE0CF3E4B4E5C16DF6F28785 /* Pods-ZoomedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZoomedTests/Pods-ZoomedTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +137,12 @@
 				A0E91DC82551134B00F7511B /* TabBarController.m */,
 				A0CD4E1F2550F70D00FE2458 /* ViewController.h */,
 				A0CD4E202550F70D00FE2458 /* ViewController.m */,
+				A0E91DCD2551300500F7511B /* UIImageView+ContentScaleFactor.h */,
+				A0E91DCE2551300500F7511B /* UIImageView+ContentScaleFactor.m */,
+				A0E91DD32551615900F7511B /* UIScreen+NativeScale.h */,
+				A0E91DD42551615900F7511B /* UIScreen+NativeScale.m */,
+				A0E91DE2255166CC00F7511B /* PrivateScreenMode.h */,
+				A0E91DE3255166CC00F7511B /* PrivateScreenMode.m */,
 				A0E91DBD2551073600F7511B /* ScreenBoundsPrint.h */,
 				A0E91DBE2551073600F7511B /* ScreenBoundsPrint.m */,
 				A0CD4E252550F70F00FE2458 /* Assets.xcassets */,
@@ -490,10 +505,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E91DD52551615900F7511B /* UIScreen+NativeScale.m in Sources */,
+				A0E91DCF2551300600F7511B /* UIImageView+ContentScaleFactor.m in Sources */,
 				A0CD4E212550F70D00FE2458 /* ViewController.m in Sources */,
 				A0CD4E1B2550F70D00FE2458 /* AppDelegate.m in Sources */,
 				A0E91DC92551134C00F7511B /* TabBarController.m in Sources */,
 				A0E91DBF2551073600F7511B /* ScreenBoundsPrint.m in Sources */,
+				A0E91DE4255166CC00F7511B /* PrivateScreenMode.m in Sources */,
 				A0CD4E2C2550F70F00FE2458 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,7 @@
 #import "AFNetworking.h"
 #import "UIImageView+AFNetworking.h"
 #import "ScreenBoundsPrint.h"
+//#import "UIImageView+ContentScaleFactor.h"
 
 @interface ViewController ()
 
@@ -66,6 +67,7 @@
 //    [self.imageView setImageWithURL:[NSURL URLWithString:@"https://wx3.sinaimg.cn/large/49535fefly1fj72buwho5j21hc0u00xy.jpg"]];
     NSLog(@"imageview:%@",self.imageView);
     NSLog(@"image:%@",self.imageView.image);
+    NSLog(@"imageview.traitCollection.displayScale:%f",self.imageView.traitCollection.displayScale);
 }
 
 #pragma mark -
