@@ -54,6 +54,7 @@
 
     [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
+        make.width.height.mas_equalTo(16);
     }];
     [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_topMargin);
@@ -76,7 +77,7 @@
     if (!_imageView)
     {
         _imageView = [[UIImageView alloc] init];
-        _imageView.contentMode = UIViewContentModeScaleAspectFit;
+        _imageView.contentMode = UIViewContentModeScaleToFill;
         _imageView.image = [UIImage imageNamed:self.tabBarItem.title];
     }
     return _imageView;

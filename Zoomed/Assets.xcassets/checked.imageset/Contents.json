@@ -1,11 +1,12 @@
 {
   "images" : [
     {
+      "filename" : "checked@3x.png",
       "idiom" : "iphone",
       "scale" : "1x"
     },
     {
-      "filename" : "checked@2x.png",
+      "filename" : "checked@3x.png",
       "idiom" : "iphone",
       "scale" : "2x"
     },
