@@ -17,6 +17,7 @@
 
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIButton *button;
+@property (nonatomic, strong) UILabel *textLabel;
 
 @end
 
@@ -27,7 +28,12 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     [self viewsLayoutInit];
-    [ScreenBoundsPrint screenBoundsPrint:@"viewDidLoad"];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    self.textLabel.text = [ScreenBoundsPrint screenInfo];
 }
 
 #pragma mark -
@@ -50,17 +56,23 @@
 #pragma mark - views layout init
 - (void)viewsLayoutInit
 {
-    [self.view addSubview:self.imageView];
-    [self.view addSubview:self.button];
-
-    [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self.view);
-        make.width.height.mas_equalTo(16);
-    }];
-    [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.view addSubview:self.textLabel];
+    [self.textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_topMargin);
-        make.centerX.equalTo(self.view.mas_centerX);
+        make.leading.trailing.equalTo(self.view);
+        make.bottom.equalTo(self.view.mas_bottomMargin);
     }];
+//    [self.view addSubview:self.imageView];
+//    [self.view addSubview:self.button];
+
+//    [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.center.equalTo(self.view);
+//        make.width.height.mas_equalTo(16);
+//    }];
+//    [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.view.mas_topMargin);
+//        make.centerX.equalTo(self.view.mas_centerX);
+//    }];
 }
 
 #pragma mark - buttons actions
@@ -73,6 +85,18 @@
 }
 
 #pragma mark -
+- (UILabel *)textLabel
+{
+    if (!_textLabel)
+    {
+        _textLabel = [[UILabel alloc] init];
+        _textLabel.textColor = [UIColor blackColor];
+        _textLabel.font = [UIFont systemFontOfSize:15];
+        _textLabel.numberOfLines = 0;
+    }
+    return _textLabel;
+}
+
 - (UIImageView *)imageView
 {
     if (!_imageView)

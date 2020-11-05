@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)screenBoundsPrint:(nonnull NSString *)methodName;
 
++ (nonnull NSString *)screenInfo;
+
 @end
 
 NS_ASSUME_NONNULL_END
