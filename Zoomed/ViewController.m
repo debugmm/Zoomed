@@ -58,9 +58,7 @@
 {
     [self.view addSubview:self.textLabel];
     [self.textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view.mas_topMargin);
-        make.leading.trailing.equalTo(self.view);
-        make.bottom.equalTo(self.view.mas_bottomMargin);
+        make.center.equalTo(self.view);
     }];
 //    [self.view addSubview:self.imageView];
 //    [self.view addSubview:self.button];
