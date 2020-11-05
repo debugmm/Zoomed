@@ -11,6 +11,7 @@
 #import "UIImageView+AFNetworking.h"
 #import "ScreenBoundsPrint.h"
 //#import "UIImageView+ContentScaleFactor.h"
+#import "PrivateImage.h"
 
 @interface ViewController ()
 
