@@ -56,21 +56,21 @@
 #pragma mark - views layout init
 - (void)viewsLayoutInit
 {
-//    [self.view addSubview:self.textLabel];
-//    [self.textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.center.equalTo(self.view);
-//    }];
-    [self.view addSubview:self.imageView];
-    [self.view addSubview:self.button];
-
-    [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.view addSubview:self.textLabel];
+    [self.textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
-        make.width.height.mas_equalTo(16);
     }];
-    [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view.mas_topMargin);
-        make.centerX.equalTo(self.view.mas_centerX);
-    }];
+//    [self.view addSubview:self.imageView];
+//    [self.view addSubview:self.button];
+//
+//    [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.center.equalTo(self.view);
+//        make.width.height.mas_equalTo(16);
+//    }];
+//    [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.view.mas_topMargin);
+//        make.centerX.equalTo(self.view.mas_centerX);
+//    }];
 }
 
 #pragma mark - buttons actions
