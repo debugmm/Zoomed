@@ -24,7 +24,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window.rootViewController = [[TabBarController alloc] init];
+    self.window.rootViewController = [[ViewController alloc] init];
     CGFloat scale = [UIScreen mainScreen].scale;
     CGFloat h = [UIScreen mainScreen].nativeBounds.size.height / scale;
     CGFloat w = [UIScreen mainScreen].nativeBounds.size.width / scale;

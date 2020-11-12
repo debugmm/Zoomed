@@ -28,12 +28,14 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     [self viewsLayoutInit];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     self.textLabel.text = [ScreenBoundsPrint screenInfo];
+    NSLog(@"%@\n%f",self.textLabel.text,[[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom);
 }
 
 #pragma mark -
