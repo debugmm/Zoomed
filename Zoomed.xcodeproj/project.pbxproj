@@ -10,6 +10,7 @@
 		161F520ED6AB70534B3E1D4A /* Pods_ZoomedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24279FC885635C254875D012 /* Pods_ZoomedUITests.framework */; };
 		9468DFF4A9FA5E44254091AA /* Pods_ZoomedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729CD4D516CD938A529314F4 /* Pods_ZoomedTests.framework */; };
 		A0BCAA8A2553A75500075A9D /* PrivateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BCAA892553A75500075A9D /* PrivateImage.m */; };
+		A0C6A637255EA37D008AA16F /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C6A636255EA37D008AA16F /* TestViewController.m */; };
 		A0CD4E1B2550F70D00FE2458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E1A2550F70D00FE2458 /* AppDelegate.m */; };
 		A0CD4E212550F70D00FE2458 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E202550F70D00FE2458 /* ViewController.m */; };
 		A0CD4E262550F70F00FE2458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CD4E252550F70F00FE2458 /* Assets.xcassets */; };
@@ -53,6 +54,9 @@
 		A09AA9307413D75F99682271 /* Pods_Zoomed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoomed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0BCAA882553A75500075A9D /* PrivateImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateImage.h; sourceTree = "<group>"; };
 		A0BCAA892553A75500075A9D /* PrivateImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateImage.m; sourceTree = "<group>"; };
+		A0C6A635255EA37D008AA16F /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		A0C6A636255EA37D008AA16F /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		A0C6A63B255EA3AB008AA16F /* ViewController+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+Private.h"; sourceTree = "<group>"; };
 		A0CD4E162550F70D00FE2458 /* Zoomed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoomed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CD4E192550F70D00FE2458 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0CD4E1A2550F70D00FE2458 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -139,7 +143,10 @@
 				A0E91DC72551134B00F7511B /* TabBarController.h */,
 				A0E91DC82551134B00F7511B /* TabBarController.m */,
 				A0CD4E1F2550F70D00FE2458 /* ViewController.h */,
+				A0C6A63B255EA3AB008AA16F /* ViewController+Private.h */,
 				A0CD4E202550F70D00FE2458 /* ViewController.m */,
+				A0C6A635255EA37D008AA16F /* TestViewController.h */,
+				A0C6A636255EA37D008AA16F /* TestViewController.m */,
 				A0E91DCD2551300500F7511B /* UIImageView+ContentScaleFactor.h */,
 				A0E91DCE2551300500F7511B /* UIImageView+ContentScaleFactor.m */,
 				A0BCAA882553A75500075A9D /* PrivateImage.h */,
@@ -514,6 +521,7 @@
 				A0E91DCF2551300600F7511B /* UIImageView+ContentScaleFactor.m in Sources */,
 				A0CD4E212550F70D00FE2458 /* ViewController.m in Sources */,
 				A0CD4E1B2550F70D00FE2458 /* AppDelegate.m in Sources */,
+				A0C6A637255EA37D008AA16F /* TestViewController.m in Sources */,
 				A0E91DC92551134C00F7511B /* TabBarController.m in Sources */,
 				A0E91DBF2551073600F7511B /* ScreenBoundsPrint.m in Sources */,
 				A0E91DE4255166CC00F7511B /* PrivateScreenMode.m in Sources */,

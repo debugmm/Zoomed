@@ -8,7 +8,7 @@
 #import "AppDelegate.h"
 #import "TabBarController.h"
 #import "ScreenBoundsPrint.h"
-#import "ViewController.h"
+#import "TestViewController.h"
 
 @interface AppDelegate ()
 {

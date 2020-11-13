@@ -6,7 +6,7 @@
 //
 
 #import "TabBarController.h"
-#import "ViewController.h"
+#import "TestViewController.h"
 
 @interface TabBarController ()
 
@@ -35,19 +35,19 @@
 #pragma mark - views layout init
 - (void)viewsLayoutInit
 {
-    ViewController *v1 = [[ViewController alloc] init];
+    ViewController *v1 = [[TestViewController alloc] init];
     v1.tabBarItem.title = @"checked";
     v1.tabBarItem.image = [UIImage imageNamed:@"checked"];
 
-    ViewController *v2 = [[ViewController alloc] init];
+    ViewController *v2 = [[TestViewController alloc] init];
     v2.tabBarItem.title = @"identity";
     v2.tabBarItem.image = [UIImage imageNamed:@"identity"];
 
-    ViewController *v3 = [[ViewController alloc] init];
+    ViewController *v3 = [[TestViewController alloc] init];
     v3.tabBarItem.title = @"location";
     v3.tabBarItem.image = [UIImage imageNamed:@"location"];
 
-    ViewController *v4 = [[ViewController alloc] init];
+    ViewController *v4 = [[TestViewController alloc] init];
     v4.tabBarItem.title = @"refresh";
     v4.tabBarItem.image = [UIImage imageNamed:@"refresh"];
 
