@@ -109,6 +109,7 @@ NSString * const ObserveValueForKeyPathMethodName = @"observeValueForKeyPath:ofO
     else
     {
         // Fallback on earlier versions
+        NSLog(@"viewDidLayoutSubviews>>>class name:%@",NSStringFromClass([self class]));
         if (self.safeAreaBlock)
         {
             CGFloat topLayoutLength = self.topLayoutGuide.length;
@@ -130,6 +131,7 @@ NSString * const ObserveValueForKeyPathMethodName = @"observeValueForKeyPath:ofO
                                 change:(NSDictionary<NSKeyValueChangeKey, id> *)change
                                context:(void *)context
 {
+    NSLog(@"viewDidLayoutSubviews>>>class name:%@",NSStringFromClass([self class]));
     NSLog(@">>>>>>");
     NSLog(@"keyPath:%@",keyPath);
     NSLog(@"object:%@",object);

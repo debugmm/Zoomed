@@ -43,6 +43,16 @@
     [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
+- (void)viewDidLayoutSubviews
+{
+    NSLog(@"class name:%@",NSStringFromClass([self class]));
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+{
+    NSLog(@"class name:%@",NSStringFromClass([self class]));
+}
+
 #pragma mark - views layout init
 - (void)viewsLayoutInit
 {
