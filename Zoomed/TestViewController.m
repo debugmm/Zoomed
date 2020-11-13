@@ -7,9 +7,11 @@
 
 #import "TestViewController.h"
 #import "ViewController+Private.h"
+#import "NavigationController.h"
+#import "Masonry.h"
 
 @interface TestViewController ()
-
+@property (nonatomic, strong) UIButton *button;
 @end
 
 @implementation TestViewController
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self viewsLayoutInit];
+
     __weak typeof(self) weakSelf = self;
     self.safeAreaBlock = ^(CGFloat topSafeHeight, CGFloat bottomSafeHeight, CGFloat screenWidth, CGFloat screenHeight,CGFloat vcViewWidth,CGFloat vcViewHeight) {
         CGRect topLineViewFrame = weakSelf.topLineView.frame;
@@ -34,14 +38,35 @@
     };
 }
 
-/*
-#pragma mark - Navigation
+- (void)viewsLayoutInit
+{
+    [self.view addSubview:self.button];
+    self.button.backgroundColor = [UIColor yellowColor];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_topMargin);
+        make.centerX.equalTo(self.view.mas_centerX);
+    }];
 }
-*/
+
+#pragma mark - buttons actions
+- (void)buttonAction:(UIButton *)sender
+{
+    
+}
+
+#pragma mark - property
+- (UIButton *)button
+{
+    if (!_button)
+    {
+        _button = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+        [_button setTitle:@"加载图片" forState:UIControlStateNormal];
+        [_button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_button setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
+    }
+    return _button;
+}
 
 @end

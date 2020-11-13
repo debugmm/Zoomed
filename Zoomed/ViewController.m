@@ -16,7 +16,6 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) UIImageView *imageView;
-@property (nonatomic, strong) UIButton *button;
 @property (nonatomic, strong) UILabel *textLabel;
 //test view
 @property (nonatomic, strong) UIView *topSeparateLineView;
@@ -76,7 +75,6 @@
             CGFloat bottom = bottomLayoutLength;
             self.safeAreaBlock(top, bottom, w, h, 0, 0);
         }
-
     }
 }
 
@@ -101,19 +99,12 @@
     [self.view addSubview:self.topSeparateLineView];
     [self.view addSubview:self.topLineView];
     [self.view addSubview:self.imageView];
-    [self.view addSubview:self.button];
     [self.view addSubview:self.bottomLineView];
     [self.view addSubview:self.bottomSeparateLineView];
-
-    self.button.backgroundColor = [UIColor yellowColor];
 
     [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
         make.width.height.mas_equalTo(16);
-    }];
-    [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view.mas_topMargin);
-        make.centerX.equalTo(self.view.mas_centerX);
     }];
     [self.topSeparateLineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_topMargin);
@@ -127,15 +118,6 @@
     }];
 }
 
-#pragma mark - buttons actions
-- (void)buttonAction:(UIButton *)sender
-{
-//    [self.imageView setImageWithURL:[NSURL URLWithString:@"https://wx3.sinaimg.cn/large/49535fefly1fj72buwho5j21hc0u00xy.jpg"]];
-    NSLog(@"imageview:%@",self.imageView);
-    NSLog(@"image:%@",self.imageView.image);
-    NSLog(@"imageview.traitCollection.displayScale:%f",self.imageView.traitCollection.displayScale);
-}
-
 #pragma mark -
 - (void)observeValueForKeyPath:(NSString *)keyPath
                       ofObject:(id)object
@@ -147,14 +129,17 @@
     NSLog(@"object:%@",object);
     NSLog(@"change:%@",change);
 
-    if (@available(iOS 11.0, *) && self.safeAreaBlock)
+    if (@available(iOS 11.0, *))
     {
-        CGFloat w = [UIScreen mainScreen].bounds.size.width;
-        CGFloat h = [UIScreen mainScreen].bounds.size.height;
-        UIEdgeInsets safeAreaInset = ((NSValue *)[change objectForKey:NSKeyValueChangeNewKey]).UIEdgeInsetsValue;
-        CGFloat top = safeAreaInset.top;
-        CGFloat bottom = safeAreaInset.bottom;
-        self.safeAreaBlock(top, bottom, w, h, 0, 0);
+        if (self.safeAreaBlock)
+        {
+            CGFloat w = [UIScreen mainScreen].bounds.size.width;
+            CGFloat h = [UIScreen mainScreen].bounds.size.height;
+            UIEdgeInsets safeAreaInset = ((NSValue *)[change objectForKey:NSKeyValueChangeNewKey]).UIEdgeInsetsValue;
+            CGFloat top = safeAreaInset.top;
+            CGFloat bottom = safeAreaInset.bottom;
+            self.safeAreaBlock(top, bottom, w, h, 0, 0);
+        }
     }
 }
 
@@ -180,19 +165,6 @@
         _imageView.image = [UIImage imageNamed:self.tabBarItem.title];
     }
     return _imageView;
-}
-
-- (UIButton *)button
-{
-    if (!_button)
-    {
-        _button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
-        [_button setTitle:@"加载图片" forState:UIControlStateNormal];
-        [_button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_button setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
-    }
-    return _button;
 }
 
 - (UIView *)topSeparateLineView
