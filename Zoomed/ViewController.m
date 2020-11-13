@@ -13,10 +13,6 @@
 //#import "UIImageView+ContentScaleFactor.h"
 #import "PrivateImage.h"
 
-#define weakify(...) \
-    rac_keywordify \
-    metamacro_foreach_cxt(rac_weakify_,, __weak, __VA_ARGS__)
-
 @interface ViewController ()
 
 @property (nonatomic, strong) UIImageView *imageView;
@@ -38,8 +34,10 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self viewsLayoutInit];
 //    self.view.safeAreaInsets
-//    [self addObserver:self forKeyPath:@"view.safeAreaInsets" options:NSKeyValueObservingOptionNew context:nil];
-    self.view.backgroundColor = [UIColor whiteColor];
+    if (@available(iOS 11.0, *))
+    {
+        [self addObserver:self forKeyPath:@"view.safeAreaInsets" options:NSKeyValueObservingOptionNew context:nil];
+    }
     __weak typeof(self) weakSelf = self;
     self.safeAreaBlock = ^(CGFloat topSafeHeight, CGFloat bottomSafeHeight, CGFloat screenWidth, CGFloat screenHeight,CGFloat vcViewWidth,CGFloat vcViewHeight) {
         CGRect topLineViewFrame = weakSelf.topLineView.frame;
@@ -68,16 +66,29 @@
 //    self.textLabel.text = [ScreenBoundsPrint screenInfo];
 }
 
-- (void)viewDidLayoutSubviews {
-    CGFloat topLayoutLength = self.topLayoutGuide.length;
-    CGFloat bottomLayoutLength = self.bottomLayoutGuide.length;
-    NSLog(@"topLayoutLength:%f,bottomLayoutLength:%f",topLayoutLength,bottomLayoutLength);
-    CGFloat w = [UIScreen mainScreen].bounds.size.width;
-    CGFloat h = [UIScreen mainScreen].bounds.size.height;
-    CGFloat top = topLayoutLength;
-    CGFloat bottom = bottomLayoutLength;
+- (void)dealloc
+{
+    if (@available(iOS 11.0, *)) {
+        [self removeObserver:self forKeyPath:@"view.safeAreaInsets"];
+    }
+}
 
-    self.safeAreaBlock(top, bottom, w, h, 0, 0);
+- (void)viewDidLayoutSubviews {
+    if (@available(iOS 11.0, *))
+    {
+    }
+    else
+    {
+        // Fallback on earlier versions
+        CGFloat topLayoutLength = self.topLayoutGuide.length;
+        CGFloat bottomLayoutLength = self.bottomLayoutGuide.length;
+        NSLog(@"topLayoutLength:%f,bottomLayoutLength:%f",topLayoutLength,bottomLayoutLength);
+        CGFloat w = [UIScreen mainScreen].bounds.size.width;
+        CGFloat h = [UIScreen mainScreen].bounds.size.height;
+        CGFloat top = topLayoutLength;
+        CGFloat bottom = bottomLayoutLength;
+        self.safeAreaBlock(top, bottom, w, h, 0, 0);
+    }
 }
 
 #pragma mark -
@@ -152,17 +163,9 @@
     CGFloat top = safeAreaInset.top;
     CGFloat bottom = safeAreaInset.bottom;
 
-    CGRect topLineViewFrame = self.topLineView.frame;
-    if (topLineViewFrame.origin.y != top+1)
+    if (@available(iOS 11.0, *))
     {
-        topLineViewFrame = CGRectMake(0, top+1, w, 40);
-        self.topLineView.frame = topLineViewFrame;
-    }
-    CGRect bottomLineViewFrame = self.bottomLineView.frame;
-    if (bottomLineViewFrame.origin.y != (h-bottom-40-1))
-    {
-        bottomLineViewFrame = CGRectMake(0, h-bottom-40-1, w, 40);
-        self.bottomLineView.frame = bottomLineViewFrame;
+        self.safeAreaBlock(top, bottom, w, h, 0, 0);
     }
 }
 
