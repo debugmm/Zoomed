@@ -31,7 +31,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self viewsLayoutInit];
+    [self _viewsLayoutInit];
 //    self.view.safeAreaInsets
     if (@available(iOS 11.0, *))
     {
@@ -90,7 +90,7 @@
 }
 
 #pragma mark - views layout init
-- (void)viewsLayoutInit
+- (void)_viewsLayoutInit
 {
 //    [self.view addSubview:self.textLabel];
 //    [self.textLabel mas_makeConstraints:^(MASConstraintMaker *make) {

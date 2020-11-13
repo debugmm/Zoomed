@@ -1,21 +1,19 @@
 //
-//  TestViewController.m
+//  AViewController.m
 //  Zoomed
 //
 //  Created by jungao on 2020/11/13.
 //
 
-#import "TestViewController.h"
-#import "ViewController+Private.h"
-#import "NavigationController.h"
-#import "Masonry.h"
 #import "AViewController.h"
+#import "Masonry.h"
+#import "ViewController+Private.h"
 
-@interface TestViewController ()
+@interface AViewController ()
 @property (nonatomic, strong) UIButton *button;
 @end
 
-@implementation TestViewController
+@implementation AViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,7 +40,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 #pragma mark - views layout init
@@ -60,8 +58,9 @@
 #pragma mark - buttons actions
 - (void)buttonAction:(UIButton *)sender
 {
-    AViewController *a = [[AViewController alloc] init];
-    [self.navigationController pushViewController:a animated:YES];
+//    TestViewController *root = [[TestViewController alloc] init];
+//    NavigationController *nvc = [[NavigationController alloc] initWithRootViewController:root];
+//    [self presentViewController:nvc animated:YES completion:nil];
 }
 
 #pragma mark - property
