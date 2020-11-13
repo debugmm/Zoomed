@@ -41,7 +41,7 @@
 //    [self addObserver:self forKeyPath:@"view.safeAreaInsets" options:NSKeyValueObservingOptionNew context:nil];
     self.view.backgroundColor = [UIColor whiteColor];
     __weak typeof(self) weakSelf = self;
-    self.safeAreaBlock = ^(CGFloat topSafeHeight, CGFloat bottomSafeHeight, CGFloat screenWidth, CGFloat screenHeight) {
+    self.safeAreaBlock = ^(CGFloat topSafeHeight, CGFloat bottomSafeHeight, CGFloat screenWidth, CGFloat screenHeight,CGFloat vcViewWidth,CGFloat vcViewHeight) {
         CGRect topLineViewFrame = weakSelf.topLineView.frame;
         if (topLineViewFrame.origin.y != topSafeHeight+1)
         {
@@ -77,7 +77,7 @@
     CGFloat top = topLayoutLength;
     CGFloat bottom = bottomLayoutLength;
 
-    self.safeAreaBlock(top, bottom, w, h);
+    self.safeAreaBlock(top, bottom, w, h, 0, 0);
 }
 
 #pragma mark -
