@@ -19,8 +19,10 @@
 @property (nonatomic, strong) UIButton *button;
 @property (nonatomic, strong) UILabel *textLabel;
 //test view
+@property (nonatomic, strong) UIView *topSeparateLineView;
 @property (nonatomic, strong) UIView *topLineView;
 @property (nonatomic, strong) UIView *bottomLineView;
+@property (nonatomic, strong) UIView *bottomSeparateLineView;
 
 @end
 
@@ -33,12 +35,12 @@
     [self viewsLayoutInit];
 //    self.view.safeAreaInsets
     [self addObserver:self forKeyPath:@"view.safeAreaInsets" options:NSKeyValueObservingOptionNew context:nil];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -65,12 +67,15 @@
 //    [self.textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.center.equalTo(self.view);
 //    }];
+    [self.view addSubview:self.topSeparateLineView];
     [self.view addSubview:self.topLineView];
     [self.view addSubview:self.imageView];
     [self.view addSubview:self.button];
     [self.view addSubview:self.bottomLineView];
+    [self.view addSubview:self.bottomSeparateLineView];
 
     self.button.backgroundColor = [UIColor yellowColor];
+
     [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
         make.width.height.mas_equalTo(16);
@@ -79,30 +84,16 @@
         make.top.equalTo(self.view.mas_topMargin);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
-
-//    CGRect statusBarFrame = [UIApplication sharedApplication].statusBarFrame;
-//    CGRect tabBarFrame = self.tabBarController.tabBar.frame;
-//    CGRect tabBarBounds = self.tabBarController.tabBar.bounds;
-//    NSLog(@"statusBarFrame:x:%f,y:%f,w:%f,h:%f",statusBarFrame.origin.x,statusBarFrame.origin.y,statusBarFrame.size.width,statusBarFrame.size.height);
-//    NSLog(@"tabBarFrame:x:%f,y:%f,w:%f,h:%f",tabBarFrame.origin.x,tabBarFrame.origin.y,tabBarFrame.size.width,tabBarFrame.size.height);
-//    CGFloat h = 40;
-//    CGFloat w = statusBarFrame.size.width;
-//    CGRect topLineViewFrame = CGRectMake(0, statusBarFrame.origin.y+statusBarFrame.size.height, w, h);
-////    CGFloat screenH = [UIScreen mainScreen].bounds.size.height;
-//    CGFloat tabbarY = tabBarFrame.origin.y;
-//    CGRect bottomLineViewFrame = CGRectMake(0, tabbarY-h, w, h);
-//
-//    self.topLineView.frame = topLineViewFrame;
-//    self.bottomLineView.frame = bottomLineViewFrame;
-
-//    [self.topLineView mas_makeConstraints:^(MASConstraintMaker *make) {
-////        make.height.mas_equalTo(45);
-//        make.leading.trailing.equalTo(self.view);
-//    }];
-//    [self.bottomLineView mas_makeConstraints:^(MASConstraintMaker *make) {
-////        make.height.mas_equalTo(45);
-//        make.leading.trailing.equalTo(self.view);
-//    }];
+    [self.topSeparateLineView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_topMargin);
+        make.leading.trailing.equalTo(self.view);
+        make.height.mas_equalTo(1.0);
+    }];
+    [self.bottomSeparateLineView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.view.mas_bottomMargin);
+        make.leading.trailing.equalTo(self.view);
+        make.height.mas_equalTo(1.0);
+    }];
 }
 
 #pragma mark - buttons actions
@@ -130,15 +121,15 @@
     CGFloat bottom = safeAreaInset.bottom;
 
     CGRect topLineViewFrame = self.topLineView.frame;
-    if (topLineViewFrame.origin.y != top)
+    if (topLineViewFrame.origin.y != top+1)
     {
-        topLineViewFrame = CGRectMake(0, top, w, 40);
+        topLineViewFrame = CGRectMake(0, top+1, w, 40);
         self.topLineView.frame = topLineViewFrame;
     }
     CGRect bottomLineViewFrame = self.bottomLineView.frame;
-    if (bottomLineViewFrame.origin.y != (h-bottom-40))
+    if (bottomLineViewFrame.origin.y != (h-bottom-40-1))
     {
-        bottomLineViewFrame = CGRectMake(0, h-bottom-40, w, 40);
+        bottomLineViewFrame = CGRectMake(0, h-bottom-40-1, w, 40);
         self.bottomLineView.frame = bottomLineViewFrame;
     }
 }
@@ -180,6 +171,16 @@
     return _button;
 }
 
+- (UIView *)topSeparateLineView
+{
+    if (!_topSeparateLineView)
+    {
+        _topSeparateLineView = [[UIView alloc] init];
+        _topSeparateLineView.backgroundColor = [UIColor blueColor];
+    }
+    return _topSeparateLineView;
+}
+
 - (UIView *)topLineView
 {
     if (!_topLineView)
@@ -198,6 +199,16 @@
         _bottomLineView.backgroundColor = [UIColor redColor];
     }
     return _bottomLineView;
+}
+
+- (UIView *)bottomSeparateLineView
+{
+    if (!_bottomSeparateLineView)
+    {
+        _bottomSeparateLineView = [[UIView alloc] init];
+        _bottomSeparateLineView.backgroundColor = [UIColor blueColor];
+    }
+    return _bottomSeparateLineView;
 }
 
 @end
