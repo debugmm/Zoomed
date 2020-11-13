@@ -11,7 +11,7 @@ typedef void (^SafeAreaBlock)(CGFloat topSafeHeight,CGFloat bottomSafeHeight,CGF
 
 @interface ViewController : UIViewController
 
-@property (nonatomic, copy) SafeAreaBlock safeAreaBlock;
+@property (nonatomic, copy) SafeAreaBlock safeAreaBlock NS_DEPRECATED_IOS(9_0, 16_0, "请使用自动布局");
 
 @end
 

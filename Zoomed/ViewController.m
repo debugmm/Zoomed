@@ -162,7 +162,6 @@
     UIEdgeInsets safeAreaInset = ((NSValue *)[change objectForKey:NSKeyValueChangeNewKey]).UIEdgeInsetsValue;
     CGFloat top = safeAreaInset.top;
     CGFloat bottom = safeAreaInset.bottom;
-
     if (@available(iOS 11.0, *))
     {
         self.safeAreaBlock(top, bottom, w, h, 0, 0);
