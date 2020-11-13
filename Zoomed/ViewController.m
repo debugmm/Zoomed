@@ -13,6 +13,10 @@
 //#import "UIImageView+ContentScaleFactor.h"
 #import "PrivateImage.h"
 
+#define weakify(...) \
+    rac_keywordify \
+    metamacro_foreach_cxt(rac_weakify_,, __weak, __VA_ARGS__)
+
 @interface ViewController ()
 
 @property (nonatomic, strong) UIImageView *imageView;
@@ -36,6 +40,21 @@
 //    self.view.safeAreaInsets
 //    [self addObserver:self forKeyPath:@"view.safeAreaInsets" options:NSKeyValueObservingOptionNew context:nil];
     self.view.backgroundColor = [UIColor whiteColor];
+    __weak typeof(self) weakSelf = self;
+    self.safeAreaBlock = ^(CGFloat topSafeHeight, CGFloat bottomSafeHeight, CGFloat screenWidth, CGFloat screenHeight) {
+        CGRect topLineViewFrame = weakSelf.topLineView.frame;
+        if (topLineViewFrame.origin.y != topSafeHeight+1)
+        {
+            topLineViewFrame = CGRectMake(0, topSafeHeight+1, screenWidth, 40);
+            weakSelf.topLineView.frame = topLineViewFrame;
+        }
+        CGRect bottomLineViewFrame = weakSelf.bottomLineView.frame;
+        if (bottomLineViewFrame.origin.y != (screenHeight-bottomSafeHeight-40-1))
+        {
+            bottomLineViewFrame = CGRectMake(0, screenHeight-bottomSafeHeight-40-1, screenWidth, 40);
+            weakSelf.bottomLineView.frame = bottomLineViewFrame;
+        }
+    };
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -49,7 +68,7 @@
 //    self.textLabel.text = [ScreenBoundsPrint screenInfo];
 }
 
-- (void) viewDidLayoutSubviews {
+- (void)viewDidLayoutSubviews {
     CGFloat topLayoutLength = self.topLayoutGuide.length;
     CGFloat bottomLayoutLength = self.bottomLayoutGuide.length;
     NSLog(@"topLayoutLength:%f,bottomLayoutLength:%f",topLayoutLength,bottomLayoutLength);
@@ -58,18 +77,7 @@
     CGFloat top = topLayoutLength;
     CGFloat bottom = bottomLayoutLength;
 
-    CGRect topLineViewFrame = self.topLineView.frame;
-    if (topLineViewFrame.origin.y != top+1)
-    {
-        topLineViewFrame = CGRectMake(0, top+1, w, 40);
-        self.topLineView.frame = topLineViewFrame;
-    }
-    CGRect bottomLineViewFrame = self.bottomLineView.frame;
-    if (bottomLineViewFrame.origin.y != (h-bottom-40-1))
-    {
-        bottomLineViewFrame = CGRectMake(0, h-bottom-40-1, w, 40);
-        self.bottomLineView.frame = bottomLineViewFrame;
-    }
+    self.safeAreaBlock(top, bottom, w, h);
 }
 
 #pragma mark -
