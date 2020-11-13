@@ -13,6 +13,7 @@
 		A0C6A637255EA37D008AA16F /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C6A636255EA37D008AA16F /* TestViewController.m */; };
 		A0C6A641255EA802008AA16F /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C6A640255EA802008AA16F /* NavigationController.m */; };
 		A0C6A647255EAC22008AA16F /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C6A646255EAC22008AA16F /* AViewController.m */; };
+		A0C6A65E255EE07D008AA16F /* ViewController+PrivateCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C6A65D255EE07D008AA16F /* ViewController+PrivateCategory.m */; };
 		A0CD4E1B2550F70D00FE2458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E1A2550F70D00FE2458 /* AppDelegate.m */; };
 		A0CD4E212550F70D00FE2458 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD4E202550F70D00FE2458 /* ViewController.m */; };
 		A0CD4E262550F70F00FE2458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CD4E252550F70F00FE2458 /* Assets.xcassets */; };
@@ -63,6 +64,8 @@
 		A0C6A640255EA802008AA16F /* NavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		A0C6A645255EAC22008AA16F /* AViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
 		A0C6A646255EAC22008AA16F /* AViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		A0C6A65C255EE07D008AA16F /* ViewController+PrivateCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+PrivateCategory.h"; sourceTree = "<group>"; };
+		A0C6A65D255EE07D008AA16F /* ViewController+PrivateCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+PrivateCategory.m"; sourceTree = "<group>"; };
 		A0CD4E162550F70D00FE2458 /* Zoomed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoomed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CD4E192550F70D00FE2458 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0CD4E1A2550F70D00FE2458 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 				A0CD4E1F2550F70D00FE2458 /* ViewController.h */,
 				A0C6A63B255EA3AB008AA16F /* ViewController+Private.h */,
 				A0CD4E202550F70D00FE2458 /* ViewController.m */,
+				A0C6A65C255EE07D008AA16F /* ViewController+PrivateCategory.h */,
+				A0C6A65D255EE07D008AA16F /* ViewController+PrivateCategory.m */,
 				A0C6A635255EA37D008AA16F /* TestViewController.h */,
 				A0C6A636255EA37D008AA16F /* TestViewController.m */,
 				A0C6A645255EAC22008AA16F /* AViewController.h */,
@@ -529,6 +534,7 @@
 			files = (
 				A0C6A647255EAC22008AA16F /* AViewController.m in Sources */,
 				A0E91DD52551615900F7511B /* UIScreen+NativeScale.m in Sources */,
+				A0C6A65E255EE07D008AA16F /* ViewController+PrivateCategory.m in Sources */,
 				A0E91DCF2551300600F7511B /* UIImageView+ContentScaleFactor.m in Sources */,
 				A0CD4E212550F70D00FE2458 /* ViewController.m in Sources */,
 				A0CD4E1B2550F70D00FE2458 /* AppDelegate.m in Sources */,
