@@ -57,7 +57,7 @@ NSString * const ObserveValueForKeyPathMethodName = @"observeValueForKeyPath:ofO
 - (void)dealloc
 {
     if (@available(iOS 11.0, *)) {
-        [self removeObserver:self forKeyPath:@"view.safeAreaInsets"];
+        [self removeObserver:self forKeyPath:ViewSafeAreaInsetsKeyPath];
     }
 }
 
