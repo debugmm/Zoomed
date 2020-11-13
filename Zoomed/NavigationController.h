@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NavigationController : UINavigationController
 
-+ (instancetype)testNavigationController;
++ (instancetype)testNavigationControllerWithTitle:(nonnull NSString *)title;
 
 @end
 

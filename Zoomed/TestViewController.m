@@ -61,6 +61,8 @@
 - (void)buttonAction:(UIButton *)sender
 {
     AViewController *a = [[AViewController alloc] init];
+    a.title = self.title;
+    a.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:a animated:YES];
 }
 

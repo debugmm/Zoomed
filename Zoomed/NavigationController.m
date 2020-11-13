@@ -19,9 +19,10 @@
     // Do any additional setup after loading the view.
 }
 
-+ (instancetype)testNavigationController
++ (instancetype)testNavigationControllerWithTitle:(nonnull NSString *)title
 {
     TestViewController *root = [[TestViewController alloc] init];
+    root.title = title;
     NavigationController *nvc = [[NavigationController alloc] initWithRootViewController:root];
     return nvc;
 }

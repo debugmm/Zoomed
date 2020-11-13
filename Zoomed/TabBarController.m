@@ -36,19 +36,19 @@
 #pragma mark - views layout init
 - (void)viewsLayoutInit
 {
-    NavigationController *v1 = [NavigationController testNavigationController];//[[TestViewController alloc] init];
+    NavigationController *v1 = [NavigationController testNavigationControllerWithTitle:@"checked"];//[[TestViewController alloc] init];
     v1.tabBarItem.title = @"checked";
     v1.tabBarItem.image = [UIImage imageNamed:@"checked"];
 
-    NavigationController *v2 = [NavigationController testNavigationController];//[[TestViewController alloc] init];
+    NavigationController *v2 = [NavigationController testNavigationControllerWithTitle:@"identity"];//[[TestViewController alloc] init];
     v2.tabBarItem.title = @"identity";
     v2.tabBarItem.image = [UIImage imageNamed:@"identity"];
 
-    NavigationController *v3 = [NavigationController testNavigationController];//[[TestViewController alloc] init];
+    NavigationController *v3 = [NavigationController testNavigationControllerWithTitle:@"location"];//[[TestViewController alloc] init];
     v3.tabBarItem.title = @"location";
     v3.tabBarItem.image = [UIImage imageNamed:@"location"];
 
-    NavigationController *v4 = [NavigationController testNavigationController];//[[TestViewController alloc] init];
+    NavigationController *v4 = [NavigationController testNavigationControllerWithTitle:@"refresh"];//[[TestViewController alloc] init];
     v4.tabBarItem.title = @"refresh";
     v4.tabBarItem.image = [UIImage imageNamed:@"refresh"];
 

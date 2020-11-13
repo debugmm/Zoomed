@@ -58,9 +58,7 @@
 #pragma mark - buttons actions
 - (void)buttonAction:(UIButton *)sender
 {
-//    TestViewController *root = [[TestViewController alloc] init];
-//    NavigationController *nvc = [[NavigationController alloc] initWithRootViewController:root];
-//    [self presentViewController:nvc animated:YES completion:nil];
+
 }
 
 #pragma mark - property

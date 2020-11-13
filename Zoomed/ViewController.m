@@ -162,7 +162,7 @@
     {
         _imageView = [[UIImageView alloc] init];
         _imageView.contentMode = UIViewContentModeScaleToFill;
-        _imageView.image = [UIImage imageNamed:self.tabBarItem.title];
+        _imageView.image = [UIImage imageNamed:self.title];
     }
     return _imageView;
 }
