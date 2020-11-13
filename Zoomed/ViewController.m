@@ -34,7 +34,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self viewsLayoutInit];
 //    self.view.safeAreaInsets
-    [self addObserver:self forKeyPath:@"view.safeAreaInsets" options:NSKeyValueObservingOptionNew context:nil];
+//    [self addObserver:self forKeyPath:@"view.safeAreaInsets" options:NSKeyValueObservingOptionNew context:nil];
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
@@ -47,6 +47,29 @@
 {
     [super viewDidAppear:animated];
 //    self.textLabel.text = [ScreenBoundsPrint screenInfo];
+}
+
+- (void) viewDidLayoutSubviews {
+    CGFloat topLayoutLength = self.topLayoutGuide.length;
+    CGFloat bottomLayoutLength = self.bottomLayoutGuide.length;
+    NSLog(@"topLayoutLength:%f,bottomLayoutLength:%f",topLayoutLength,bottomLayoutLength);
+    CGFloat w = [UIScreen mainScreen].bounds.size.width;
+    CGFloat h = [UIScreen mainScreen].bounds.size.height;
+    CGFloat top = topLayoutLength;
+    CGFloat bottom = bottomLayoutLength;
+
+    CGRect topLineViewFrame = self.topLineView.frame;
+    if (topLineViewFrame.origin.y != top+1)
+    {
+        topLineViewFrame = CGRectMake(0, top+1, w, 40);
+        self.topLineView.frame = topLineViewFrame;
+    }
+    CGRect bottomLineViewFrame = self.bottomLineView.frame;
+    if (bottomLineViewFrame.origin.y != (h-bottom-40-1))
+    {
+        bottomLineViewFrame = CGRectMake(0, h-bottom-40-1, w, 40);
+        self.bottomLineView.frame = bottomLineViewFrame;
+    }
 }
 
 #pragma mark -
@@ -111,6 +134,7 @@
                         change:(NSDictionary<NSKeyValueChangeKey, id> *)change
                        context:(void *)context
 {
+    NSLog(@">>>>>>");
     NSLog(@"keyPath:%@",keyPath);
     NSLog(@"object:%@",object);
     NSLog(@"change:%@",change);
