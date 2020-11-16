@@ -60,17 +60,23 @@
 {
     if (@available(iOS 11.0, *))
     {
-
     }
-    if (self.safeAreaBlock)
+    else
     {
-        CGFloat topLayoutLength = self.topLayoutGuide.length;
-        CGFloat bottomLayoutLength = self.bottomLayoutGuide.length;
-        CGFloat w = [UIScreen mainScreen].bounds.size.width;
-        CGFloat h = [UIScreen mainScreen].bounds.size.height;
-        CGFloat top = topLayoutLength;
-        CGFloat bottom = bottomLayoutLength;
-        self.safeAreaBlock(top, bottom, w, h, 0, 0);
+        if (self.safeAreaBlock)
+        {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+            CGFloat topLayoutLength = self.topLayoutGuide.length;
+            CGFloat bottomLayoutLength = self.bottomLayoutGuide.length;
+#pragma clang diagnostic pop
+            CGFloat w = [UIScreen mainScreen].bounds.size.width;
+            CGFloat h = [UIScreen mainScreen].bounds.size.height;
+            CGFloat top = topLayoutLength;
+            CGFloat bottom = bottomLayoutLength;
+            NSLog(@"topLayoutGuide top:%f,bottomLayoutGuide bottom:%f",top,bottom);
+            self.safeAreaBlock(top, bottom, w, h, 0, 0);
+        }
     }
 }
 
@@ -79,7 +85,16 @@
     [super viewSafeAreaInsetsDidChange];
     if (@available(iOS 11.0, *))
     {
-
+        if (self.safeAreaBlock)
+        {
+            CGFloat w = [UIScreen mainScreen].bounds.size.width;
+            CGFloat h = [UIScreen mainScreen].bounds.size.height;
+            UIEdgeInsets safeAreaInset = self.view.safeAreaInsets;
+            CGFloat top = safeAreaInset.top;
+            CGFloat bottom = safeAreaInset.bottom;
+            NSLog(@"safeAreaInsets top:%f,bottom:%f",top,bottom);
+            self.safeAreaBlock(top, bottom, w, h, 0, 0);
+        }
     }
 }
 
