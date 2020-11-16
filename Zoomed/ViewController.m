@@ -58,6 +58,10 @@
 
 - (void)viewDidLayoutSubviews
 {
+    if (@available(iOS 11.0, *))
+    {
+
+    }
     if (self.safeAreaBlock)
     {
         CGFloat topLayoutLength = self.topLayoutGuide.length;
@@ -67,6 +71,15 @@
         CGFloat top = topLayoutLength;
         CGFloat bottom = bottomLayoutLength;
         self.safeAreaBlock(top, bottom, w, h, 0, 0);
+    }
+}
+
+- (void)viewSafeAreaInsetsDidChange
+{
+    [super viewSafeAreaInsetsDidChange];
+    if (@available(iOS 11.0, *))
+    {
+
     }
 }
 
