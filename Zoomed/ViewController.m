@@ -51,6 +51,11 @@
 //    self.textLabel.text = [ScreenBoundsPrint screenInfo];
 }
 
+- (void)dealloc
+{
+    self.safeAreaBlock = nil;
+}
+
 - (void)viewDidLayoutSubviews
 {
     if (self.safeAreaBlock)
