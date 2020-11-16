@@ -24,6 +24,7 @@
 
     __weak typeof(self) weakSelf = self;
     self.safeAreaBlock = ^(CGFloat topSafeHeight, CGFloat bottomSafeHeight, CGFloat screenWidth, CGFloat screenHeight,CGFloat vcViewWidth,CGFloat vcViewHeight) {
+        NSLog(@"topSafeHeight:%f,bottomSafeHeight:%f,screenWidth:%f,screenHeight:%f,vcViewWidth:%f,vcViewHeight:%f",topSafeHeight,bottomSafeHeight,screenWidth,screenHeight,vcViewWidth,vcViewHeight);
         CGRect topLineViewFrame = weakSelf.topLineView.frame;
         if (topLineViewFrame.origin.y != topSafeHeight+1)
         {
