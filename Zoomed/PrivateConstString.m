@@ -10,7 +10,7 @@
 NSString * const ViewSafeAreaInsetsKeyPath = @"view.safeAreaInsets";
 NSString * const ViewDidLayoutSubviewsMethodName = @"viewDidLayoutSubviews";
 NSString * const ObserveValueForKeyPathMethodName = @"observeValueForKeyPath:ofObject:change:context:";
-NSString * const SafeAreaBlockPropertyKey = @"safeAreaBlockProperty";
+//NSString * const SafeAreaBlockPropertyKey = @"safeAreaBlockProperty";
 
 @implementation PrivateConstString
 
