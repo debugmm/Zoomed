@@ -8,7 +8,6 @@
 #import "AViewController.h"
 #import "Masonry.h"
 #import "ViewController+Private.h"
-#import "UIViewController+PrivateCategory.h"
 
 @interface AViewController ()
 @property (nonatomic, strong) UIButton *button;
@@ -42,11 +41,6 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:NO];
-}
-
-- (void)viewDidLayoutSubviews
-{
-    NSLog(@"class name:%@",NSStringFromClass([self class]));
 }
 
 //- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context

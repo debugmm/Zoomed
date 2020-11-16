@@ -10,7 +10,6 @@
 #import "NavigationController.h"
 #import "Masonry.h"
 #import "AViewController.h"
-#import "UIViewController+PrivateCategory.h"
 
 @interface TestViewController ()
 @property (nonatomic, strong) UIButton *button;
@@ -44,6 +43,7 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
+    NSLog(@"SafeAreaBlock:%@",self.safeAreaBlock);
 }
 
 #pragma mark - views layout init

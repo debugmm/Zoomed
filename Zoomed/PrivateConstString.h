@@ -11,7 +11,7 @@ FOUNDATION_EXPORT NSString * const ViewDidLayoutSubviewsMethodName;
 FOUNDATION_EXPORT NSString * const ObserveValueForKeyPathMethodName;
 FOUNDATION_EXPORT NSString * const ViewSafeAreaInsetsKeyPath;
 //FOUNDATION_EXPORT NSString * const SafeAreaBlockPropertyKey;
-static char SafeAreaBlockPropertyKey;
+static const void * SafeAreaBlockPropertyKey = &SafeAreaBlockPropertyKey;
 
 NS_ASSUME_NONNULL_BEGIN
 
