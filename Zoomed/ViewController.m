@@ -54,6 +54,7 @@
 #pragma mark -
 - (void)viewDidLayoutSubviews
 {
+    [super viewDidLayoutSubviews];
     if (@available(iOS 11.0, *))
     {
     }
