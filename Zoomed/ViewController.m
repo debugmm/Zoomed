@@ -33,11 +33,6 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     [self _viewsLayoutInit];
-//    self.view.safeAreaInsets
-//    if (@available(iOS 11.0, *))
-//    {
-//        [self addObserver:self forKeyPath:ViewSafeAreaInsetsKeyPath options:NSKeyValueObservingOptionNew context:nil];
-//    }
 }
 
 - (void)viewWillAppear:(BOOL)animated

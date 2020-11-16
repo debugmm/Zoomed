@@ -43,7 +43,6 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
-    NSLog(@"SafeAreaBlock:%@",self.safeAreaBlock);
 }
 
 #pragma mark - views layout init

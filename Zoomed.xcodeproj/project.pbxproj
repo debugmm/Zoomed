@@ -10,6 +10,7 @@
 		161F520ED6AB70534B3E1D4A /* Pods_ZoomedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24279FC885635C254875D012 /* Pods_ZoomedUITests.framework */; };
 		9468DFF4A9FA5E44254091AA /* Pods_ZoomedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729CD4D516CD938A529314F4 /* Pods_ZoomedTests.framework */; };
 		A008CE8225621EBE0027037E /* PrivateConstString.m in Sources */ = {isa = PBXBuildFile; fileRef = A008CE8125621EBE0027037E /* PrivateConstString.m */; };
+		A008CEE025625C910027037E /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A008CEDF25625C910027037E /* BViewController.m */; };
 		A0BCAA8A2553A75500075A9D /* PrivateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BCAA892553A75500075A9D /* PrivateImage.m */; };
 		A0C6A637255EA37D008AA16F /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C6A636255EA37D008AA16F /* TestViewController.m */; };
 		A0C6A641255EA802008AA16F /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C6A640255EA802008AA16F /* NavigationController.m */; };
@@ -54,6 +55,8 @@
 		8E299038B4CD144128F6154B /* Pods-Zoomed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoomed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zoomed/Pods-Zoomed.debug.xcconfig"; sourceTree = "<group>"; };
 		A008CE8025621EBE0027037E /* PrivateConstString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateConstString.h; sourceTree = "<group>"; };
 		A008CE8125621EBE0027037E /* PrivateConstString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateConstString.m; sourceTree = "<group>"; };
+		A008CEDE25625C910027037E /* BViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		A008CEDF25625C910027037E /* BViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
 		A09AA9307413D75F99682271 /* Pods_Zoomed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoomed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0BCAA882553A75500075A9D /* PrivateImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateImage.h; sourceTree = "<group>"; };
 		A0BCAA892553A75500075A9D /* PrivateImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateImage.m; sourceTree = "<group>"; };
@@ -154,6 +157,8 @@
 				A0C6A636255EA37D008AA16F /* TestViewController.m */,
 				A0C6A645255EAC22008AA16F /* AViewController.h */,
 				A0C6A646255EAC22008AA16F /* AViewController.m */,
+				A008CEDE25625C910027037E /* BViewController.h */,
+				A008CEDF25625C910027037E /* BViewController.m */,
 				A0C6A63F255EA802008AA16F /* NavigationController.h */,
 				A0C6A640255EA802008AA16F /* NavigationController.m */,
 				A0BCAA882553A75500075A9D /* PrivateImage.h */,
@@ -523,6 +528,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C6A647255EAC22008AA16F /* AViewController.m in Sources */,
+				A008CEE025625C910027037E /* BViewController.m in Sources */,
 				A0CD4E212550F70D00FE2458 /* ViewController.m in Sources */,
 				A0CD4E1B2550F70D00FE2458 /* AppDelegate.m in Sources */,
 				A0C6A637255EA37D008AA16F /* TestViewController.m in Sources */,

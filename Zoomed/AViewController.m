@@ -8,6 +8,7 @@
 #import "AViewController.h"
 #import "Masonry.h"
 #import "ViewController+Private.h"
+#import "BViewController.h"
 
 @interface AViewController ()
 @property (nonatomic, strong) UIButton *button;
@@ -63,7 +64,10 @@
 #pragma mark - buttons actions
 - (void)buttonAction:(UIButton *)sender
 {
-
+    BViewController *a = [[BViewController alloc] init];
+    a.title = self.title;
+    a.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:a animated:YES];
 }
 
 #pragma mark - property
