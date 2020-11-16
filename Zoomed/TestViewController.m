@@ -10,6 +10,7 @@
 #import "NavigationController.h"
 #import "Masonry.h"
 #import "AViewController.h"
+#import "UIViewController+PrivateCategory.h"
 
 @interface TestViewController ()
 @property (nonatomic, strong) UIButton *button;

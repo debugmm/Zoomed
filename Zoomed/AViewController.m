@@ -8,6 +8,7 @@
 #import "AViewController.h"
 #import "Masonry.h"
 #import "ViewController+Private.h"
+#import "UIViewController+PrivateCategory.h"
 
 @interface AViewController ()
 @property (nonatomic, strong) UIButton *button;
