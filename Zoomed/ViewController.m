@@ -51,6 +51,7 @@
     self.safeAreaBlock = nil;
 }
 
+#pragma mark -
 - (void)viewDidLayoutSubviews
 {
     if (@available(iOS 11.0, *))
