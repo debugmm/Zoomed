@@ -7,15 +7,31 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B7FD9A88-1EE3-467E-8616-47ED1D04208A"
+            uuid = "995CDAA8-7B3D-4003-B432-F2E162B367CB"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Zoomed/TestViewController.m"
+            filePath = "Zoomed/ViewController+PrivateCategory.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "-viewDidLayoutSubviews"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B28E99A4-3EAB-4409-9231-A20020A22B4E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Zoomed/AViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
@@ -23,16 +39,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "49074D20-2B3D-4DBF-A3D0-E0365F9BD81B"
+            uuid = "7BD25613-64C5-4B26-BCD7-93BE51A6550C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Zoomed/UIViewController+PrivateCategory.m"
+            filePath = "Zoomed/ViewController+PrivateCategory.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "-viewDidLayoutSubviews"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-_privatePerformMethodListWithMethodName:parameters:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
