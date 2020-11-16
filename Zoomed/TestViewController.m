@@ -46,6 +46,16 @@
     [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleDefault;
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return NO;
+}
+
 #pragma mark - views layout init
 - (void)viewsLayoutInit
 {
