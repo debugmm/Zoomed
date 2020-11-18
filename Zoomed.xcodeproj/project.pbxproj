@@ -11,6 +11,7 @@
 		9468DFF4A9FA5E44254091AA /* Pods_ZoomedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729CD4D516CD938A529314F4 /* Pods_ZoomedTests.framework */; };
 		A008CE8225621EBE0027037E /* PrivateConstString.m in Sources */ = {isa = PBXBuildFile; fileRef = A008CE8125621EBE0027037E /* PrivateConstString.m */; };
 		A008CEE025625C910027037E /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A008CEDF25625C910027037E /* BViewController.m */; };
+		A01FA6DF2563CD4F00EE2CC1 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A01FA6DE2563CD4F00EE2CC1 /* Debug.xcconfig */; };
 		A0BCAA8A2553A75500075A9D /* PrivateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BCAA892553A75500075A9D /* PrivateImage.m */; };
 		A0C6A637255EA37D008AA16F /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C6A636255EA37D008AA16F /* TestViewController.m */; };
 		A0C6A641255EA802008AA16F /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C6A640255EA802008AA16F /* NavigationController.m */; };
@@ -57,6 +58,7 @@
 		A008CE8125621EBE0027037E /* PrivateConstString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateConstString.m; sourceTree = "<group>"; };
 		A008CEDE25625C910027037E /* BViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
 		A008CEDF25625C910027037E /* BViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		A01FA6DE2563CD4F00EE2CC1 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		A09AA9307413D75F99682271 /* Pods_Zoomed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoomed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0BCAA882553A75500075A9D /* PrivateImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateImage.h; sourceTree = "<group>"; };
 		A0BCAA892553A75500075A9D /* PrivateImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateImage.m; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		A0CD4E0D2550F70D00FE2458 = {
 			isa = PBXGroup;
 			children = (
+				A01FA6DE2563CD4F00EE2CC1 /* Debug.xcconfig */,
 				A0CD4E182550F70D00FE2458 /* Zoomed */,
 				A0CD4E342550F70F00FE2458 /* ZoomedTests */,
 				A0CD4E3F2550F70F00FE2458 /* ZoomedUITests */,
@@ -329,6 +332,7 @@
 			files = (
 				A0CD4E292550F70F00FE2458 /* LaunchScreen.storyboard in Resources */,
 				A0CD4E262550F70F00FE2458 /* Assets.xcassets in Resources */,
+				A01FA6DF2563CD4F00EE2CC1 /* Debug.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
