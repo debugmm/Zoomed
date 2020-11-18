@@ -29,9 +29,11 @@
     CGFloat nativeScale = [UIScreen mainScreen].nativeScale;
     CGFloat nh = [UIScreen mainScreen].nativeBounds.size.height;
     CGFloat nw = [UIScreen mainScreen].nativeBounds.size.width;
+    CGFloat calculateW = 0;
     NSString *displayModel = @"标准显示模式";
     if (scale < nativeScale) displayModel = @"放大显示模式";
-    NSString *screenInfo = [NSString stringWithFormat:@"当前显示模式：%@\n\n屏幕逻辑尺寸信息：\n屏幕高度：%f\n屏幕宽度：%f\n屏幕放大比例：%f\n\n像素信息：\n屏幕像素高度：%f\n屏幕像素宽度：%f\n屏幕像素放大比例：%f",displayModel,h,w,scale,nh,nw,nativeScale];
+    if (scale < nativeScale) calculateW = (nw * w) / (nw - ((nativeScale - scale) * w));
+    NSString *screenInfo = [NSString stringWithFormat:@"当前显示模式：%@\n\n屏幕逻辑尺寸信息：\n屏幕高度：%f\n屏幕宽度：%f\n屏幕放大比例：%f\n\n像素信息：\n屏幕像素高度：%f\n屏幕像素宽度：%f\n屏幕像素放大比例：%f\n计算后的标准屏幕逻辑尺寸：%f",displayModel,h,w,scale,nh,nw,nativeScale,calculateW];
     return screenInfo;
 }
 
