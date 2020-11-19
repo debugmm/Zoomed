@@ -43,7 +43,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-//    self.textLabel.text = [ScreenBoundsPrint screenInfo];
+    self.textLabel.text = [ScreenBoundsPrint screenInfo];
 }
 
 - (void)dealloc
@@ -109,20 +109,20 @@
 #pragma mark - views layout init
 - (void)_viewsLayoutInit
 {
-//    [self.view addSubview:self.textLabel];
-//    [self.textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.center.equalTo(self.view);
-//    }];
+    [self.view addSubview:self.textLabel];
+    [self.textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+    }];
     [self.view addSubview:self.topSeparateLineView];
     [self.view addSubview:self.topLineView];
     [self.view addSubview:self.imageView];
     [self.view addSubview:self.bottomLineView];
     [self.view addSubview:self.bottomSeparateLineView];
 
-    [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self.view);
-        make.width.height.mas_equalTo(16);
-    }];
+//    [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.center.equalTo(self.view);
+//        make.width.height.mas_equalTo(16);
+//    }];
     [self.topSeparateLineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_topMargin);
         make.leading.trailing.equalTo(self.view);
