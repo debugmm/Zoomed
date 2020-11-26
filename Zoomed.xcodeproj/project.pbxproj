@@ -12,6 +12,7 @@
 		A008CE8225621EBE0027037E /* PrivateConstString.m in Sources */ = {isa = PBXBuildFile; fileRef = A008CE8125621EBE0027037E /* PrivateConstString.m */; };
 		A008CEE025625C910027037E /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A008CEDF25625C910027037E /* BViewController.m */; };
 		A01FA6DF2563CD4F00EE2CC1 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A01FA6DE2563CD4F00EE2CC1 /* Debug.xcconfig */; };
+		A0981B1325662540007BD69B /* CerHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A0981B1225662540007BD69B /* CerHandler.m */; };
 		A0BCAA8A2553A75500075A9D /* PrivateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BCAA892553A75500075A9D /* PrivateImage.m */; };
 		A0C6A637255EA37D008AA16F /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C6A636255EA37D008AA16F /* TestViewController.m */; };
 		A0C6A641255EA802008AA16F /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C6A640255EA802008AA16F /* NavigationController.m */; };
@@ -59,6 +60,8 @@
 		A008CEDE25625C910027037E /* BViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
 		A008CEDF25625C910027037E /* BViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
 		A01FA6DE2563CD4F00EE2CC1 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		A0981B1125662540007BD69B /* CerHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CerHandler.h; sourceTree = "<group>"; };
+		A0981B1225662540007BD69B /* CerHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CerHandler.m; sourceTree = "<group>"; };
 		A09AA9307413D75F99682271 /* Pods_Zoomed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoomed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0BCAA882553A75500075A9D /* PrivateImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateImage.h; sourceTree = "<group>"; };
 		A0BCAA892553A75500075A9D /* PrivateImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateImage.m; sourceTree = "<group>"; };
@@ -170,6 +173,8 @@
 				A0E91DE3255166CC00F7511B /* PrivateScreenMode.m */,
 				A0E91DBD2551073600F7511B /* ScreenBoundsPrint.h */,
 				A0E91DBE2551073600F7511B /* ScreenBoundsPrint.m */,
+				A0981B1125662540007BD69B /* CerHandler.h */,
+				A0981B1225662540007BD69B /* CerHandler.m */,
 				A0CD4E252550F70F00FE2458 /* Assets.xcassets */,
 				A0CD4E272550F70F00FE2458 /* LaunchScreen.storyboard */,
 				A0CD4E2A2550F70F00FE2458 /* Info.plist */,
@@ -540,6 +545,7 @@
 				A0E91DBF2551073600F7511B /* ScreenBoundsPrint.m in Sources */,
 				A008CE8225621EBE0027037E /* PrivateConstString.m in Sources */,
 				A0E91DE4255166CC00F7511B /* PrivateScreenMode.m in Sources */,
+				A0981B1325662540007BD69B /* CerHandler.m in Sources */,
 				A0C6A641255EA802008AA16F /* NavigationController.m in Sources */,
 				A0CD4E2C2550F70F00FE2458 /* main.m in Sources */,
 				A0BCAA8A2553A75500075A9D /* PrivateImage.m in Sources */,
