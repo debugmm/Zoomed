@@ -1,0 +1,21 @@
+{
+  "name": "AFNetworking",
+  "version": "4.0.1",
+  "summary": "ManageLocalCode desc",
+  "homepage": "https://github.com/AFNetworking/AFNetworking",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "abuglife": "abuglife@qq.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "/Users/jungao/Desktop/weibo.dev.code/Zoomed/Zoomed/AFNetworking"
+  },
+  "source_files": "AFNetworking/*.{h,m}",
+  "requires_arc": true
+}

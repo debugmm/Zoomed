@@ -40,6 +40,8 @@
     v1.tabBarItem.title = @"checked";
     v1.tabBarItem.image = [UIImage imageNamed:@"checked"];
 
+//    v1.tabBarItem.imageInsets = UIEdgeInsetsMake(20, 0, 20, 0);
+
 //    NavigationController *v2 = [NavigationController testNavigationControllerWithTitle:@"identity"];//[[TestViewController alloc] init];
 //    v2.tabBarItem.title = @"identity";
 //    v2.tabBarItem.image = [UIImage imageNamed:@"identity"];

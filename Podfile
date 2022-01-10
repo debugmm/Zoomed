@@ -6,10 +6,10 @@ target 'Zoomed' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   use_frameworks!
   # Pods for Zoomed
-  pod 'AFNetworking'
+#  pod 'AFNetworking', :path => '/Users/jungao/Desktop/weibo.dev.code/Zoomed/Zoomed/AFNetworking'
   pod 'MJExtension'
   pod 'Masonry'
-
+  pod 'SwiftTrace'
 
   target 'ZoomedTests' do
     inherit! :search_paths

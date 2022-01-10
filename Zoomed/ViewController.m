@@ -8,7 +8,7 @@
 #import "ViewController.h"
 #import "Masonry.h"
 #import "AFNetworking.h"
-#import "UIImageView+AFNetworking.h"
+//#import "UIImageView+AFNetworking.h"
 #import "ScreenBoundsPrint.h"
 #import <objc/runtime.h>
 #import "PrivateImage.h"
@@ -17,7 +17,7 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) UIImageView *imageView;
-@property (nonatomic, strong) UILabel *textLabel;
+
 //test view
 @property (nonatomic, strong) UIView *topSeparateLineView;
 @property (nonatomic, strong) UIView *topLineView;
@@ -43,7 +43,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    self.textLabel.text = [ScreenBoundsPrint screenInfo];
+//    self.textLabel.text = [ScreenBoundsPrint screenInfo];
 }
 
 - (void)dealloc
@@ -112,6 +112,10 @@
     [self.view addSubview:self.textLabel];
     [self.textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
+        make.leading.equalTo(self.view).offset(10);
+        make.trailing.equalTo(self.view).offset(-10);
+//        make.topMargin.equalTo(self.view).offset(10);
+//        make.bottomMargin.equalTo(self.view).offset(10);
     }];
     [self.view addSubview:self.topSeparateLineView];
     [self.view addSubview:self.topLineView];

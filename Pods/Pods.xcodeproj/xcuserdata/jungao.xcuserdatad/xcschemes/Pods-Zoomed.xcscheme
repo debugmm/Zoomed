@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7D36D2C3838206504A861E641E9E08B0"
+               BlueprintIdentifier = "26A30E92E8402ED0D106DD61961BAFCD"
                BuildableName = "Pods_Zoomed.framework"
                BlueprintName = "Pods-Zoomed"
                ReferencedContainer = "container:Pods.xcodeproj">

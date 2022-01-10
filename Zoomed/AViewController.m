@@ -12,6 +12,9 @@
 
 @interface AViewController ()
 @property (nonatomic, strong) UIButton *button;
+
+@property (nonatomic, copy) void(^testBlock)(void);
+
 @end
 
 @implementation AViewController
@@ -22,6 +25,13 @@
     [self viewsLayoutInit];
 
     __weak typeof(self) weakSelf = self;
+
+    self.testBlock = ^{
+        __strong typeof(self) strongSelf = weakSelf;
+        NSLog(@"%@",strongSelf);
+    };
+
+
     self.safeAreaBlock = ^(CGFloat topSafeHeight, CGFloat bottomSafeHeight, CGFloat screenWidth, CGFloat screenHeight,CGFloat vcViewWidth,CGFloat vcViewHeight) {
         NSLog(@"topSafeHeight:%f,bottomSafeHeight:%f,screenWidth:%f,screenHeight:%f,vcViewWidth:%f,vcViewHeight:%f",topSafeHeight,bottomSafeHeight,screenWidth,screenHeight,vcViewWidth,vcViewHeight);
         CGRect topLineViewFrame = weakSelf.topLineView.frame;
@@ -43,12 +53,25 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:NO];
+
+    NSLog(@"AViewController:%@,%p",self,&self);
 }
 
 //- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
 //{
 //    NSLog(@"class name:%@",NSStringFromClass([self class]));
 //}
+
+- (void)dealloc
+{
+    __weak typeof(UIButton *) btn = _button;
+    dispatch_after(10, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"%@",btn);
+    });
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        NSLog(@"%@",btn);
+//    });
+}
 
 #pragma mark - views layout init
 - (void)viewsLayoutInit

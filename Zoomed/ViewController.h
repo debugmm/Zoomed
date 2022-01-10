@@ -11,6 +11,8 @@ typedef void (^SafeAreaBlock)(CGFloat topSafeHeight,CGFloat bottomSafeHeight,CGF
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) UILabel *textLabel;
+
 /// 在这个block实现安全区附近的UIView布局
 /// 任何继承ViewController的子类，如果复写了如下任何一个方法：
 /// viewDidLayoutSubviews、viewSafeAreaInsetsDidChange

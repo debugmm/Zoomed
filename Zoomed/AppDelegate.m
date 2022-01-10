@@ -10,6 +10,8 @@
 #import "ScreenBoundsPrint.h"
 #import "TestViewController.h"
 
+#import "ReadOnlyPropertyKVO.h"
+
 @interface AppDelegate ()
 {
     UIWindow *_window;
@@ -26,6 +28,8 @@
     // Override point for customization after application launch.
     self.window.rootViewController = [[TabBarController alloc] init];
     [self.window makeKeyAndVisible];
+    /// 测试观看readonly property
+    [ReadOnlyPropertyKVO sharedManager];
     return YES;
 }
 
